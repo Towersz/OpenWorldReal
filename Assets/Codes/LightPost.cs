@@ -10,7 +10,7 @@ public class LightPost : MonoBehaviour
     void Start()
     {
         //busca script de dia e noite no jogo
-        DayCicle dayscript = GameObject.FindObjectOfType<DayCicle>();
+        DayCicle dayscript = GameObject.FindFirstObjectByType<DayCicle>();
         //inscreve as funcoes nos eventos de dia e noite
         dayscript.myNightCall += TurnOn;
         dayscript.myMorningCall += TurnOff;

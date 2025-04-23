@@ -9,12 +9,28 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 2d52019420d27cd41bbfdd20a6ad6de7
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
     path: Assets/Scenes/Shrine01.unity
     guid: ce588326ccc7f584889253b037a45b77
   - enabled: 1
     path: Assets/Scenes/Shrine02.unity
     guid: e1e14891450627141b5850c0225aaa4f
+  - enabled: 1
+    path: "Assets/PROJETO/Scenes/1\xB0Scene/terrain cena.unity"
+    guid: 36e8728632775c34ebfe05a3f0350e1e
+  - enabled: 1
+    path: "Assets/PROJETO/Scenes/1\xB0Scene/CIdade 2.unity"
+    guid: 7661baabef2e5b7409021c1bf5f58a26
+  - enabled: 1
+    path: "Assets/PROJETO/Scenes/Templos/1\xB0Templo/Templo 1.unity"
+    guid: cc9c651b49c97214198d9ec52f42c6e3
+  - enabled: 1
+    path: "Assets/PROJETO/Scenes/Templos/2\xB0Templo/Templo 2.unity"
+    guid: ddc4cb8bbfc8926478b0863158629499
+  - enabled: 1
+    path: "Assets/PROJETO/Scenes/Templos/4\xB0Templo/Templo 4.unity"
+    guid: f2781cd7f146bd143ae95d3b1518e00b
+  - enabled: 1
+    path: "Assets/PROJETO/Scenes/1\xB0Scene/Cidade 1.unity"
+    guid: 1b8e9bcf4bee6f247b75fcac21a6444c
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
