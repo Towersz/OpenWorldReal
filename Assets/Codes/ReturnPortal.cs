@@ -22,6 +22,6 @@ public class ReturnPortal : MonoBehaviour
     {
         Camera.main.SendMessage("FadeOut");
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("terrain cena");
     }
 }
