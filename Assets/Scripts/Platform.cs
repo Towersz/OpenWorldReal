@@ -9,6 +9,8 @@ public class Platform : MonoBehaviour
     public bool move = true;
     Vector3 position;
     Rigidbody rdb;
+    [SerializeField]
+    float m;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +22,10 @@ public class Platform : MonoBehaviour
     {
         if (move)
         {
+            m = Mathf.Sin(Time.time * velocity) +1* distance;
+
             transform.position = position +
-                new Vector3(0, 0, Mathf.Sin(Time.time * velocity) * distance);
+                new Vector3(0, 0, 0 );
         }
 
 
