@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
@@ -6,39 +8,40 @@ public class Platform : MonoBehaviour
     public float velocity;
     public bool move = true;
     Vector3 position;
-    public Vector3 direction = Vector3.forward;
     Rigidbody rdb;
-    [SerializeField]
-    float m;
-
+    // Start is called before the first frame update
     void Start()
     {
         position = transform.position;
         rdb = GetComponent<Rigidbody>();
     }
-
+    // Update is called once per frame
     void FixedUpdate()
     {
         if (move)
         {
-            m = Mathf.Sin(Time.time * velocity) + 1;
-            transform.position = position + direction.normalized * (m * distance / 2);
+            transform.position = position +
+                new Vector3(0, 0,Mathf.Sin(Time.time * velocity) * distance);
         }
-    }
 
-    private void OnCollisionEnter(Collision col)
+
+    }
+    private void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("Player"))
+      
+        if (col.CompareTag("Player"))
         {
+           
             col.transform.parent = transform;
         }
     }
-
-    private void OnCollisionExit(Collision col)
+    private void OnTriggerExit(Collider col)
     {
-        if (col.gameObject.CompareTag("Player"))
+        if (col.CompareTag("Player"))
         {
             col.transform.parent = null;
         }
     }
+
+
 }

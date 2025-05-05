@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameraMove : MonoBehaviour {
+public class cameraMove1 : MonoBehaviour 
+{
 
     private float rSpeed = 3.0f;
     private float mSpeed = 20.0f;
@@ -12,11 +13,11 @@ public class cameraMove : MonoBehaviour {
     void Update()
     {
 
-        X += Input.GetAxis("Mouse X") * rSpeed;
-        Y += Input.GetAxis("Mouse Y") * rSpeed;
-        transform.localRotation = Quaternion.AngleAxis(X, Vector3.up);
-        transform.localRotation *= Quaternion.AngleAxis(Y, Vector3.left);
-        transform.position += transform.forward * mSpeed * Input.GetAxis("Vertical") * Time.deltaTime;
-        transform.position += transform.right * mSpeed * Input.GetAxis("Horizontal") * Time.deltaTime;
+       // X += Input.GetAxis("Mouse X") * rSpeed;
+       // Y += Input.GetAxis("Mouse Y") * rSpeed;
+       // transform.localRotation = Quaternion.AngleAxis(X, Vector3.up);
+        //transform.localRotation *= Quaternion.AngleAxis(Y, Vector3.left);
+        //transform.position += transform.forward * mSpeed * Input.GetAxis("Vertical") * Time.deltaTime;
+       // transform.position += transform.right * mSpeed * Input.GetAxis("Horizontal") * Time.deltaTime;
     }
 }
