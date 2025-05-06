@@ -22,7 +22,7 @@ public class ShrineOut : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Land");
+            SceneManager.LoadScene("terrain cena");
         }
     }
 }
