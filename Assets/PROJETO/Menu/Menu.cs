@@ -18,7 +18,7 @@ public class Menu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Land");
+        SceneManager.LoadScene("terrain cena");
     }
 
     public void Options()
