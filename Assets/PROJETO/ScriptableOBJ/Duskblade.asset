@@ -10,15 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8006a7f6253f22b49995009b9d365b09, type: 3}
-  m_Name: Item
+  m_Name: Duskblade
   m_EditorClassIdentifier: 
-  itemName: Specter blade
-<<<<<<< Updated upstream
+  itemName: Duskblade
   icon: {fileID: 21300000, guid: ba10cde9fce10504a939a1626571fb46, type: 3}
-=======
-  icon: {fileID: 0}
->>>>>>> Stashed changes
-  description: "espada de uma m\xE3o"
-  prefab: {fileID: 3898726074190107861, guid: e7938bcb8de94f10bc951160219fa60b, type: 3}
+  description: "espada de uma m\xE3o 11111111"
+  prefab: {fileID: 8221090752478616715, guid: 7b06546200b9b5747ba12055862b49c7, type: 3}
   isStackable: 1
-  maxStack: 1
+  maxStack: 99
