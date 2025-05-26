@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FoamMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: fc7df81110c0e4d2498739bf4d47a49d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -101,11 +101,11 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Density: 0.07
+    - _Density: 0.21
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DiffuseNormalUp: 0.3
-    - _DstBlend: 0
+    - _DiffuseNormalUp: 1
+    - _DstBlend: 9
     - _DstBlendAlpha: 0
     - _EdgeBlend: 0.9
     - _EnableRefraction: 1
@@ -129,14 +129,14 @@ Material:
     - _ReceiveShadows: 1
     - _ReflectionBumpScale: 0.44
     - _Refraction: 0.34
-    - _Smoothness: 0.9
+    - _Smoothness: 0.41
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _WorkflowMode: 1
-    - _ZTest: 0
+    - _ZTest: 2
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
