@@ -6,6 +6,7 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
+<<<<<<< Updated upstream
       value: 0503035e54560d0c0b5f587412270e4445161d73792c75327c7c4c6be7b0643a
       flags: 0
     RecentlyUsedSceneGuid-1:
@@ -34,6 +35,36 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-9:
       value: 5650075f500c580d0b0c55734822064417161b2f2e2b70347b2f1c60b3b7303e
+=======
+      value: 07555752065751590f080f7a49710944414f1a7a747e756178714b61bbb46d61
+      flags: 0
+    RecentlyUsedSceneGuid-1:
+      value: 00520d055300585959570f7b47710e44474e402e752d25657f2f4961e1b6316b
+      flags: 0
+    RecentlyUsedSceneGuid-2:
+      value: 055305075c015d0f0e595b7244755e44134e412e2a7c74327a2a4e31bae3606d
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 52530c035c570a5d590c092746250d4441154f7f2a2b27337f781c65b6b4603b
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 0102505254075f5f5d5b542413725e4441164c2e2a7c7e657d7b1c65e3b66d6a
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 5007515e5207510d5e5c5b7545200c4413151e2f7c7d27632b794e66b2e5653d
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 0003070451540f030e0b0e7546210b44134f1e2b782a27317f2b4c30b2e1666a
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 0506555204565c0e5d0b5d7a49715d444e4f4d797b7e76642b2d1c35e6e2376f
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 5754025203540f5a54560d2045715e44464f1d782a717e637f7a4b64e7b1616e
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 5754510057500f0f0858587314260e444515197b7c787635792a4b6bb6e46539
+>>>>>>> Stashed changes
       flags: 0
     UnityEditor.ShaderGraph.Blackboard:
       value: 18135939215a0a5004000b0e15254b524c030a3f2964643d120d1230e9e93a3fd6e826abbd2e2d293c4ead313b08042de6030a0afa240c0d020be94c4baf5e435d8715fa32c70d15d11612dacc11fee5d3c5d1fe9ab1bf968e93e2ffcbc3e7e2f0b3ffe0e8b0be9af8ffaeffff8e85dd8390e3949c8899daa7
@@ -43,6 +74,9 @@ EditorUserSettings:
       flags: 0
     UnityEditor.ShaderGraph.InspectorWindow:
       value: 18135939215a0a5004000b0e15254b524c1119263f2d6a722016393ce1eb3d36e5d339f9a560393d3511ea7046333e09f7181d02f50a06241708ee0b05bd4a435f95548717f73713d91006c1c309d0effad0d2f9ddffa5828691f0beb6fdd1cbfceba0b9f0b3bed8e8f5ade1ff8c978883d3f59e9e919c89eacfcc
+      flags: 0
+    lightmappingBakingProfile:
+      value: 51
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
