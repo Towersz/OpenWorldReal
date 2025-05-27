@@ -29,13 +29,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100000}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!193 &19300000
 Tree:
@@ -71,6 +71,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -222,6 +225,7 @@ Material:
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!21 &2100002
 Material:
   serializedVersion: 8
@@ -276,6 +280,7 @@ Material:
     - _EnvironmentReflections: 1
     - _GbufferLighting: 1
     - _HorizonFade: 1
+    - _MotionVectorsVA: 0
     - _ReceiveDecals: 0
     - _ReceiveShadows: 1
     - _ShadowOffsetScale: 1
@@ -294,6 +299,7 @@ Material:
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!43 &4300000
 Mesh:
   m_ObjectHideFlags: 0
@@ -461,8 +467,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -482,7 +488,7 @@ MonoBehaviour:
   m_Name: Tree Data
   m_EditorClassIdentifier: 
   _uniqueID: 884
-  materialHash: fca03d22de413a9a4a26cd9d1a3a1c58215482368
+  materialHash: 000223021c2c221240a8d58098cced58215482368
   root:
     _uniqueID: 1
     seed: 1234
@@ -1656,8 +1662,7 @@ MonoBehaviour:
     childGroupIDs: 
     geometryMode: 4
     materialLeaf: {fileID: 0}
-    instanceMesh: {fileID: 1488672502844861572, guid: c09568b5187ca0d498cb5e03497e23f7,
-      type: 3}
+    instanceMesh: {fileID: 1488672502844861572, guid: c09568b5187ca0d498cb5e03497e23f7, type: 3}
     size: {x: 1, y: 1}
     perpendicularAlign: 0
     horizontalAlign: 0
@@ -1754,8 +1759,7 @@ MonoBehaviour:
     childGroupIDs: 
     geometryMode: 4
     materialLeaf: {fileID: 0}
-    instanceMesh: {fileID: 1488672502844861572, guid: c09568b5187ca0d498cb5e03497e23f7,
-      type: 3}
+    instanceMesh: {fileID: 1488672502844861572, guid: c09568b5187ca0d498cb5e03497e23f7, type: 3}
     size: {x: 0.9159509, y: 0.9159509}
     perpendicularAlign: 0.128
     horizontalAlign: 0.326
