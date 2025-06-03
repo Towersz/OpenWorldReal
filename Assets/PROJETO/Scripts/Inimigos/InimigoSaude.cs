@@ -19,7 +19,7 @@ public class InimigoSaude : MonoBehaviour
         if (isDead) return;
 
         SaudeAtual -= Quantidade;
-        animator.Golpe();
+        animator.Ataque();
 
         if (SaudeAtual <= 0)
         {
