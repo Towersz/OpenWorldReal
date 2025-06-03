@@ -56,7 +56,7 @@ public class IAFoge : MonoBehaviour
         {
             if (Time.time - lastWanderTime > wanderCooldown)
             {
-                Vector3 randomDestination = RandomNavMeshPoint(wanderRadius);
+                Vector3 randomDestination = RandomPosition(wanderRadius);
                 agent.SetDestination(randomDestination);
                 lastWanderTime = Time.time;
             }
@@ -64,15 +64,13 @@ public class IAFoge : MonoBehaviour
     }
 }
 
-
-    Vector3 RandomNavMeshPoint(float radius)
+    Vector3 RandomPosition(float range)
     {
-        Vector3 randomDirection = Random.insideUnitSphere * radius;
-        randomDirection += transform.position;
-
-        NavMeshHit navHit;
-        NavMesh.SamplePosition(randomDirection, out navHit, radius, NavMesh.AllAreas);
-
-        return navHit.position;
+        Vector3 pos;
+        pos = transform.position + new Vector3(UnityEngine.Random.Range(-range, range)
+            , 0
+            , UnityEngine.Random.Range(-range, range));
+        return pos;
     }
+
 }
