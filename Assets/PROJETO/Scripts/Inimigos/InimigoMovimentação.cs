@@ -17,6 +17,7 @@ public class InimigoMovimentação : MonoBehaviour
     private int PatrulhaAtualIndex;
     private InimigoCombate combate;
     private InimigoSaude saude;
+    private InimigoAnimator animator;
 
     private enum Estado { Patrulha, Chase, Ataque}
     private Estado atualEstado = Estado.Patrulha;
@@ -26,6 +27,8 @@ public class InimigoMovimentação : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         combate = GetComponent<InimigoCombate>();
         saude = GetComponent<InimigoSaude>();
+        animator = GetComponent<InimigoAnimator>();
+
         PatrulhaAtualIndex = 0;
 
         IrproProximoPontosdePatrulha();
@@ -35,7 +38,9 @@ public class InimigoMovimentação : MonoBehaviour
     {
         if (saude.Die()) return;
 
+        animator.UpdateSpeed(agent.velocity.magnitude);
         float distance = Vector3.Distance(transform.position, player.position);
+
 
         if (distance <= AtaqueRange)
         {
