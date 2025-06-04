@@ -31,32 +31,32 @@ public class InimigoCombate : MonoBehaviour
     }
     public void Update()
     {
-        AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
-        if (state.IsName("Ataque"))
-        {
-            float t = state.normalizedTime % 1;
-            if (t > 0.3f && t < 0.6f)
-            {
-                if (!HitboxAtivada)
-                {
-                    Hitbox.enabled = true;
-                    HitboxAtivada = true;
-                }
-            }
-            else
-            {
-                if (HitboxAtivada)
-                {
-                    Hitbox.enabled = false;
-                    HitboxAtivada = false;
-                }
-            }
-        }
-        else
-        {
-            Hitbox.enabled = false;
-            HitboxAtivada = false;
-        }
+        //AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
+        //if (state.IsName("Ataque"))
+        //{
+        //    float t = state.normalizedTime % 1;
+        //    if (t > 0.3f && t < 0.6f)
+        //    {
+        //        if (!HitboxAtivada)
+        //        {
+        //            Hitbox.enabled = true;
+        //            HitboxAtivada = true;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        if (HitboxAtivada)
+        //        {
+        //            Hitbox.enabled = false;
+        //            HitboxAtivada = false;
+        //        }
+        //    }
+        //}
+        //else
+        //{
+        //    Hitbox.enabled = false;
+        //    HitboxAtivada = false;
+        //}
     }
     private void OnTriggerEnter(Collider other)
     {
