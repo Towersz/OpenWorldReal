@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class InimigoAnimator : MonoBehaviour
 {
-    private Animator animator;
+    public Animator animator;
     private InimigoSaude saude;
 
     private void Awake()
