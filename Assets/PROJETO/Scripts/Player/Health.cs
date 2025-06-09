@@ -11,7 +11,7 @@ public class Health : MonoBehaviour
     public Vector3 respawnPoint;
     public float respawnTime = 5f;
     public Animator animator;
-    public MoveChanPhisical moveChanPhisical;
+    public CharacterController cc;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,10 +20,10 @@ public class Health : MonoBehaviour
         respawnPoint = transform.position;
 
         // Check if the player has a MoveChanPhisical component
-        moveChanPhisical = GetComponent<MoveChanPhisical>();
-        if (moveChanPhisical != null)
+        cc = GetComponent<CharacterController>();
+        if (cc != null)
         {
-            animator = moveChanPhisical.GetComponent<Animator>();
+            animator = cc.GetComponent<Animator>();
 
         }
 
