@@ -86,6 +86,8 @@ public class IAStarFPS : MonoBehaviour
       
         anim.SetBool("Attack", false);
         anim.SetBool("Damage", false);
+        anim.SetBool("Patrol", true);
+        anim.SetBool("Stopped", false);
         yield return new WaitForSeconds(1);
         if (Vector3.Distance(transform.position, target.transform.position) < DistanceToAttack * 3)
         {
@@ -132,6 +134,8 @@ public class IAStarFPS : MonoBehaviour
         agent.destination = target.transform.position;
         anim.SetBool("Attack", false);
         anim.SetBool("Damage", false);
+        anim.SetBool("Patrol", true);
+        anim.SetBool("Stopped", false);
         yield return new WaitForSeconds(0.1f);
         if (Vector3.Distance(transform.position, target.transform.position) < DistanceToAttack)
         {
@@ -153,6 +157,8 @@ public class IAStarFPS : MonoBehaviour
         agent.isStopped = true;
         anim.SetBool("Attack", true);
         anim.SetBool("Damage", false);
+        anim.SetBool("Patrol", false);
+        anim.SetBool("Stopped", false);
         yield return new WaitForSeconds(0.1f);
         if (Vector3.Distance(transform.position, target.transform.position) > 4)
         {
@@ -170,6 +176,8 @@ public class IAStarFPS : MonoBehaviour
         agent.isStopped = true;
         anim.SetBool("Attack", false);
         anim.SetBool("Damage", false);
+        anim.SetBool("Patrol", false);
+        anim.SetBool("Stopped", true);
         yield return new WaitForSeconds(1f);
         if (Vector3.Distance(transform.position, target.transform.position) < DistanceToAttack * 3)
         {
