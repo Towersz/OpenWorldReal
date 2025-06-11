@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8006a7f6253f22b49995009b9d365b09, type: 3}
   m_Name: Chave
   m_EditorClassIdentifier: 
-  itemName: 
-  icon: {fileID: 0}
-  description: 
-  prefab: {fileID: 0}
+  itemName: Chave
+  icon: {fileID: 21300000, guid: 33a45ccdc6fde3c42bff9eae5e2e7f50, type: 3}
+  description: chave
+  prefab: {fileID: 1713282071275856395, guid: 3461746770ccd53409dfab0045df30dc, type: 3}
   isStackable: 1
   maxStack: 99
