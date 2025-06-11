@@ -184,6 +184,19 @@ public class MenuGame : MonoBehaviour
         Debug.Log($"Removido: {item.itemName} x{quantity}");
     }
 
+    public bool HasItemInInventory(Item item)
+    {
+        foreach (var slot in inventory.items)
+        {
+            if (slot.item == item && slot.quantity > 0)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
     private void OnEnable()
     {
         RefreshInventory();
