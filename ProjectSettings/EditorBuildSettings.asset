@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: ebd3ca197794bb544baebe4c4709d560
-  - enabled: 0
-    path: "Assets/PROJETO/Scenes/1\xB0Scene/terrain cena.unity"
-    guid: 36e8728632775c34ebfe05a3f0350e1e
+  - enabled: 1
+    path: "Assets/PROJETO/Scenes/1\xB0Scene/Ilha Principal.unity"
+    guid: c23b4af8ceb76b44e8fa4baa2b1c0a22
   - enabled: 1
     path: "Assets/PROJETO/Scenes/1\xB0Scene/Cidade 1.unity"
     guid: 1b8e9bcf4bee6f247b75fcac21a6444c
@@ -18,16 +18,13 @@ EditorBuildSettings:
     path: "Assets/PROJETO/Scenes/1\xB0Scene/CIdade 2.unity"
     guid: 7661baabef2e5b7409021c1bf5f58a26
   - enabled: 1
-    path: "Assets/PROJETO/Scenes/Templos/1\xB0Templo/Templo 1.unity"
-    guid: cc9c651b49c97214198d9ec52f42c6e3
+    path: Assets/PROJETO/Scenes/Templos/Catacumbas.unity
+    guid: cdbdc808b2fb2c34f983d2bcacf379c7
   - enabled: 1
-    path: "Assets/PROJETO/Scenes/Templos/2\xB0Templo/Templo 2.unity"
-    guid: ddc4cb8bbfc8926478b0863158629499
+    path: Assets/PROJETO/Scenes/Templos/Castelo Kahona.unity
+    guid: ce42a2e02cf5be94fa480f9e1495338f
   - enabled: 1
-    path: "Assets/PROJETO/Scenes/Templos/4\xB0Templo/Templo 4.unity"
-    guid: f2781cd7f146bd143ae95d3b1518e00b
-  - enabled: 1
-    path: "Assets/PROJETO/Scenes/1\xB0Scene/Ilha Principal.unity"
-    guid: c23b4af8ceb76b44e8fa4baa2b1c0a22
+    path: Assets/PROJETO/Scenes/Templos/Farol.unity
+    guid: bc6bb221414b0a947984fadd562848b7
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
