@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/PROJETO/Scenes/Templos/Farol.unity
     guid: bc6bb221414b0a947984fadd562848b7
+  - enabled: 1
+    path: Assets/PROJETO/Scenes/Vilas/Vila da Floresta.unity
+    guid: 2456d5235cf4a5042af2b71a0481c1b5
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

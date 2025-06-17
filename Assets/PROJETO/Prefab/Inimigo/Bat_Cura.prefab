@@ -647,7 +647,6 @@ GameObject:
   - component: {fileID: 8944503262476441154}
   - component: {fileID: 1547246914379393311}
   - component: {fileID: 117901156322595082}
-  - component: {fileID: 5727259786682738511}
   m_Layer: 0
   m_Name: Bat_Cura
   m_TagString: Untagged
@@ -731,18 +730,6 @@ MonoBehaviour:
   raioDePatrulha: 20
   tempoDeEspera: 2
   distanciaMinimaParaDestino: 1
---- !u!114 &5727259786682738511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6319306008177773052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16235e20eb27e7c4a9366bf122acf933, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6662499520061668536
 GameObject:
   m_ObjectHideFlags: 0
