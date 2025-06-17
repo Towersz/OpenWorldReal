@@ -481,6 +481,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 24fc2c3e62c52bf4e9e63fd980b8e85d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1737896265620640573}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 24fc2c3e62c52bf4e9e63fd980b8e85d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5124776175669314042}
   m_SourcePrefab: {fileID: 100100000, guid: 24fc2c3e62c52bf4e9e63fd980b8e85d, type: 3}
 --- !u!1 &4943882963711996706 stripped
 GameObject:
@@ -561,6 +564,29 @@ MonoBehaviour:
   _interactorPrompUI: {fileID: 5772703246536388793}
   _numFound: 0
   Menugame: {fileID: 0}
+--- !u!114 &5124776175669314042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943882963711996706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e3ed1885aca6d4bad372835fd50ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  currentHealth: 0
+  isDead: 0
+  deathEffect: {fileID: 0}
+  respawnEffect: {fileID: 0}
+  healEffect: {fileID: 0}
+  respawnPoint: {x: 0, y: 0, z: 0}
+  respawnTime: 5
+  animator: {fileID: 0}
+  cc: {fileID: 0}
+  lifeSlider: {fileID: 0}
 --- !u!4 &5753317669148879256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 24fc2c3e62c52bf4e9e63fd980b8e85d, type: 3}

@@ -1,35 +1,43 @@
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     public int maxHealth = 3;
     public int currentHealth;
     public bool isDead = false;
+
     public GameObject deathEffect;
     public GameObject respawnEffect;
     public GameObject healEffect;
+
     public Vector3 respawnPoint;
     public float respawnTime = 5f;
+
     public Animator animator;
     public CharacterController cc;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Header("Barra de Vida UI")]
+    public Slider lifeSlider; 
+
     void Start()
     {
         currentHealth = maxHealth;
         respawnPoint = transform.position;
 
-        // Check if the player has a MoveChanPhisical component
         cc = GetComponent<CharacterController>();
         if (cc != null)
         {
             animator = cc.GetComponent<Animator>();
-
         }
 
+        if (lifeSlider != null)
+        {
+            lifeSlider.maxValue = maxHealth;
+            lifeSlider.value = currentHealth;
+        }
     }
 
-    //save the player position in the respawn point
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("RespawnPoint"))
@@ -42,6 +50,10 @@ public class Health : MonoBehaviour
     {
         animator.SetTrigger("Hit");
         currentHealth -= damage;
+
+        if (lifeSlider != null)
+            lifeSlider.value = currentHealth;
+
         if (currentHealth <= 0)
         {
             Die();
@@ -51,21 +63,19 @@ public class Health : MonoBehaviour
     public void Heal(int healAmount)
     {
         animator.SetTrigger("Heal");
-        //healEffect.SetActive(true);
-
         currentHealth += healAmount;
 
         if (currentHealth > maxHealth)
-        {
             currentHealth = maxHealth;
-        }
+
+        if (lifeSlider != null)
+            lifeSlider.value = currentHealth;
     }
 
     public void Die()
     {
         animator.SetBool("Die", true);
         isDead = true;
-        //Instantiate(deathEffect, transform.position, Quaternion.identity);
         gameObject.SetActive(false);
         Invoke("Respawn", respawnTime);
     }
@@ -75,9 +85,11 @@ public class Health : MonoBehaviour
         animator.SetBool("Die", false);
         isDead = false;
         currentHealth = maxHealth;
+
+        if (lifeSlider != null)
+            lifeSlider.value = currentHealth;
+
         transform.position = respawnPoint;
-        //Instantiate(respawnEffect, transform.position, Quaternion.identity);
         gameObject.SetActive(true);
     }
-
 }
