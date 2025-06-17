@@ -47,7 +47,7 @@ Material:
     - _Alpha: 1
     - _BumpScale: 1
     - _Culling: 0
-    - _Density: 4.2
+    - _Density: 0.6
     - _DiffuseNormalUp: 0.25
     - _DstBlend: 10
     - _EdgeBlend: 3
@@ -69,15 +69,16 @@ Material:
     - _ReflectionBumpScale: 0.3
     - _Refraction: 0.3
     - _Shadows: 0
-    - _Smoothness: 0.9
+    - _Smoothness: 0.357
     - _SpecularHighlights: 1
     - _ZTest: 4
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.46226418, g: 0.34839088, b: 0.28564438, a: 1}
+    - _Color: {r: 0.01183696, g: 0.30205858, b: 0.3584906, a: 1}
     - _FoamSpeed: {r: 0, g: 0.08, b: 0, a: 0}
     - _SecondaryTilingSpeed: {r: 2, g: 2.3, b: 0, a: 0}
     - _SecondaryTilingSpeedRefractBump: {r: 2, g: 2.3, b: 0.1, a: 1}
-    - _SpecColor: {r: 0.322, g: 0.322, b: 0.322, a: 1}
+    - _SpecColor: {r: 0.019607844, g: 0.44313726, b: 0.5254902, a: 1}
     - _Speed: {r: 0, g: 0.2, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

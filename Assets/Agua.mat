@@ -100,7 +100,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Density: 1
+    - _Density: 10
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DiffuseNormalUp: 0.762
@@ -111,9 +111,9 @@ Material:
     - _EnvironmentReflections: 1
     - _Foam: 1
     - _FoamScale: 4
-    - _FoamSlopStrength: 0.311
-    - _FoamSmoothness: 0.3
-    - _FoamSoftIntersectionFactor: 1.95
+    - _FoamSlopStrength: 0.349
+    - _FoamSmoothness: 0.555
+    - _FoamSoftIntersectionFactor: 1.56
     - _FoamTiling: 2
     - _FresnelPower: 1
     - _GlossMapScale: 0
@@ -128,7 +128,7 @@ Material:
     - _ReceiveShadows: 1
     - _ReflectionBumpScale: 0.3
     - _Refraction: 0.25
-    - _Smoothness: 0.67
+    - _Smoothness: 0.917
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -139,11 +139,11 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.17328231, g: 0.18087566, b: 0.6226415, a: 1}
+    - _Color: {r: 0.03355288, g: 0.045781784, b: 0.5471698, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FoamSpeed: {r: 0.1, g: 0, b: 0, a: 0}
     - _SecondaryTilingSpeedRefractBump: {r: 2, g: 2.3, b: 0.1, a: 1}
-    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _SpecColor: {r: 0.047169805, g: 0.046502307, b: 0.046502307, a: 1}
     - _Speed: {r: 0.1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
