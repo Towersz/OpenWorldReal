@@ -274,8 +274,8 @@ MonoBehaviour:
     y: 0
     width: 453
     height: 933
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -977,7 +977,7 @@ MonoBehaviour:
       y: 21
       width: 1053
       height: 505
-    m_Scale: {x: 0.46759257, y: 0.4675926}
+    m_Scale: {x: 0.4675926, y: 0.4675926}
     m_Translation: {x: 526.5, y: 252.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -1020,7 +1020,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79
+    y: 24
     width: 411
     height: 526
   m_SerializedDataModeController:
@@ -1037,7 +1037,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fa5e0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 9c1efdff202cfdff5a48fdff144cfdff6862fdff2467fdff2278fdffc078fdffd20cffff882bffffb498ffff76a6ffff58d4ffffacd50000b41b02007c330200
       m_RenameOverlay:
@@ -1085,8 +1085,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 412
-    y: 79
+    x: 413
+    y: 24
     width: 1053
     height: 526
   m_SerializedDataModeController:
@@ -1603,7 +1603,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 616.001, y: 0.9003873, z: 279.00357}
     speed: 2
-    m_Value: {x: 200.85565, y: 1.2585386, z: 170.46927}
+    m_Value: {x: 616.001, y: 0.9003873, z: 279.00357}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1651,11 +1651,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.14892659, y: -0.8197665, z: 0.24660249, w: 0.4950207}
     speed: 2
-    m_Value: {x: 0.14892252, y: -0.81974417, z: 0.24659576, w: 0.4950072}
+    m_Value: {x: -0.14892252, y: 0.81974417, z: -0.24659576, w: -0.4950072}
   m_Size:
     m_Target: 14.971077
     speed: 2
-    m_Value: 14.326389
+    m_Value: 14.971077
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -2591,7 +2591,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 631
+    y: 576
     width: 1466
     height: 355
   m_SerializedDataModeController:
@@ -2635,21 +2635,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 433}
     m_SelectedIDs: c6c10000
     m_LastClickedID: 49606
-    m_ExpandedIDs: 00000000cebf0000d2bf0000d4bf0000d6bf000092c00000bec00000c2c00000c4c00000c8c00000d0c0000032c1000038c1000042c10000dcc70000e0c700008ebe010090be010032c1010034c10100f0d50200fad5020050d8020000ca9a3b
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Terrain
-      m_OriginalName: Terrain
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 49366
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}
@@ -2664,7 +2664,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000cebf0000d0bf0000d2bf0000d4bf0000d6bf0000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2779,8 +2779,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1467
-    y: 79
+    x: 1468
+    y: 24
     width: 452
     height: 907
   m_SerializedDataModeController:
