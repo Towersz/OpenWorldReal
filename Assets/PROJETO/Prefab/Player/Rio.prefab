@@ -227,9 +227,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22d2d248a120c94458486ce9cd679c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionPoint: {fileID: 0}
+  _interactionPoint: {fileID: 6356849019784493164}
   _interactionPointRadius: 0.5
   _interactableMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
+  _interactorPrompUI: {fileID: 0}
   _numFound: 0
+  Menugame: {fileID: 0}
