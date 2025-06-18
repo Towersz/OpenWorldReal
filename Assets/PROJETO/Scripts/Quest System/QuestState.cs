@@ -2,7 +2,6 @@ using UnityEngine;
 
 public enum QuestState 
 {
-    REQUIREMENTS_NOT_MET,
 
     CAN_START,
 

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4417347541256773749
+--- !u!1 &3045901453377438206
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7615287127322640141}
-  - component: {fileID: -7712913254179863416}
+  - component: {fileID: 2110746800316619373}
+  - component: {fileID: -6834936278198860617}
   m_Layer: 0
-  m_Name: Catacumbas Quest
+  m_Name: KillStep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7615287127322640141
+--- !u!4 &2110746800316619373
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4417347541256773749}
+  m_GameObject: {fileID: 3045901453377438206}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,17 +32,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-7712913254179863416
+--- !u!114 &-6834936278198860617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4417347541256773749}
+  m_GameObject: {fileID: 3045901453377438206}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dccc8c4c7f6d3a247b24d079fb32eefc, type: 3}
+  m_Script: {fileID: 11500000, guid: ad768d46161dcb34ab0270bd4b03176d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemiesToKill: 6
+  enemiesToKill: 1
   targetEnemyType: skeleton
