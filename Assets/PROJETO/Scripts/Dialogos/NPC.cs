@@ -2,13 +2,16 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour, IInteractable
 {
+     [SerializeField] private string _prompt;
     public Dialogo dialogo;
 
-    public string InteractionPrompt => throw new System.NotImplementedException();
+    public string InteractionPrompt => _prompt;
 
     public bool Interact(Interactor interactor)
     {
-        throw new System.NotImplementedException();
+
+       TriggerDialogo();
+        return true;
     }
 
     public void TriggerDialogo()

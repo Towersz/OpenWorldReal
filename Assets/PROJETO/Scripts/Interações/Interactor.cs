@@ -21,34 +21,18 @@ public class Interactor : MonoBehaviour
     private IInteractable _interactable;
     private void Update()
     {
-        _numFound = Physics.OverlapSphereNonAlloc(_interactionPoint.position, _interactionPointRadius, _colliders, _interactableMask);
-
-        if (_numFound > 0)
+        if (_interactable != null)
         {
-            _interactable = _colliders[0].GetComponent<IInteractable>();
-
-            if (_interactable != null)
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                if(!_interactorPrompUI.IsDisplayed)
+                Debug.Log("Interacting with: " + _interactable);
+                if (_interactable.Interact(this))
                 {
-                    _interactorPrompUI.SetUp(_interactable.InteractionPrompt);
-                }
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    if (_interactable.Interact(this))
-                    {
-                        _interactorPrompUI.Close();
-                    }
+                    _interactorPrompUI.Close();
+                    _interactable = null;
                 }
             }
-        }
-        else
-        {
-            if (_interactable != null)
-            {
-                _interactable = null;
-                _interactorPrompUI.Close();
-            }
+
         }
     }
 
@@ -57,4 +41,25 @@ public class Interactor : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(_interactionPoint.position, _interactionPointRadius);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+        {
+            _interactable = other.GetComponent<IInteractable>();
+            Debug.Log("OnTriggerEnter: " + _interactable);
+
+            if (_interactable != null)
+            {
+                if (!_interactorPrompUI.IsDisplayed)
+                {
+                    _interactorPrompUI.SetUp(_interactable.InteractionPrompt);
+
+                }
+
+            }
+        }
+    }
+       
 }
+

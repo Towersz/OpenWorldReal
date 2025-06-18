@@ -1,4 +1,4 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -8,16 +8,19 @@ public class IAFoge : MonoBehaviour
     public float detectionRadius = 10f;
     public float fleeDistance = 15f;
     public float wanderRadius = 20f;
-   
+
     public Animator anim;
 
     private GameObject player;
-    private float lastWanderTime = 0f;
+    private bool isDead = false;
+
+    public string enemyType;
 
     public enum States
     {
         patrulha,
-        foge
+        foge,
+        morre
     }
 
     public States states;
@@ -26,31 +29,40 @@ public class IAFoge : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         if (!agent) agent = GetComponent<NavMeshAgent>();
-        if (!player) Debug.LogWarning("Jogador n„o encontrado. Certifique-se de que ele tem a tag 'Player'.");
-        StartCoroutine("Patrulha");
+        if (!player) Debug.LogWarning("Jogador n√£o encontrado. Certifique-se de que ele tem a tag 'Player'.");
+        StateMachine(States.patrulha);
     }
 
-  void Update()
-{
-    
-}
+    void Update()
+    {
+        // Exemplo: tecla para simular morte (apenas para teste)
+        if (Input.GetKeyDown(KeyCode.K) && !isDead)
+        {
+            Morre();
+        }
+    }
 
     void StateMachine(States _states)
     {
         states = _states;
+        StopAllCoroutines(); // Interrompe o estado anterior
         switch (states)
         {
             case States.patrulha:
-                StartCoroutine(Patrulha()); 
+                StartCoroutine(Patrulha());
                 break;
             case States.foge:
                 StartCoroutine(Foge());
-                break;  
+                break;
+            case States.morre:
+                StartCoroutine(Morte());
+                break;
         }
     }
+
     Vector3 RandomNav(Vector3 origem, float raio)
     {
-        for (int i = 0; i < 30; i++) // tenta encontrar um ponto v·lido atÈ 30 vezes
+        for (int i = 0; i < 30; i++)
         {
             Vector3 direcaoAleatoria = Random.insideUnitSphere * raio;
             direcaoAleatoria += origem;
@@ -59,7 +71,7 @@ public class IAFoge : MonoBehaviour
                 return hit.position;
             }
         }
-        return origem; // se n„o achar nenhum ponto, retorna onde est·
+        return origem;
     }
 
     private IEnumerator Patrulha()
@@ -67,8 +79,7 @@ public class IAFoge : MonoBehaviour
         agent.isStopped = false;
         agent.speed = 3;
         agent.destination = RandomNav(transform.position, wanderRadius);
-        
-        
+
         anim.SetBool("corre", false);
         yield return new WaitForSeconds(1);
 
@@ -80,61 +91,72 @@ public class IAFoge : MonoBehaviour
         {
             StateMachine(States.patrulha);
         }
-
     }
-
 
     private IEnumerator Foge()
     {
-        
         agent.isStopped = false;
         agent.speed = 7;
         anim.SetBool("corre", true);
 
-        yield return new WaitForSeconds(1f);        
+        yield return new WaitForSeconds(1f);
+
         float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
 
         if (distanceToPlayer < detectionRadius)
         {
-            // DireÁ„o oposta ao jogador
             Vector3 directionAwayFromPlayer = (transform.position - player.transform.position).normalized;
-
-            // Adiciona aleatoriedade ao ‚ngulo da fuga
             float randomAngle = Random.Range(-90f, 90f);
             directionAwayFromPlayer = Quaternion.Euler(0, randomAngle, 0) * directionAwayFromPlayer;
 
-            // Calcula ponto de fuga
             Vector3 fleeTarget = transform.position + directionAwayFromPlayer * fleeDistance;
 
-            // Garante que o ponto de fuga est· em uma ·rea v·lida da NavMesh
-            NavMeshHit hit;
-            if (NavMesh.SamplePosition(fleeTarget, out hit, 5f, NavMesh.AllAreas))
+            if (NavMesh.SamplePosition(fleeTarget, out NavMeshHit hit, 5f, NavMesh.AllAreas))
             {
-                // Define o destino correto
                 agent.SetDestination(hit.position);
 
-                // Aguarda atÈ o agente chegar ao ponto de fuga (com margem)
                 while (!agent.pathPending && agent.remainingDistance > agent.stoppingDistance)
                 {
-                    yield return null; // Espera um frame
+                    yield return null;
                 }
 
-                // Quando chega no ponto de fuga, volta para o estado anterior (ex: patrulha)
                 StateMachine(States.patrulha);
             }
             else
             {
-                Debug.Log("Ponto de fuga inv·lido. Retornando ‡ patrulha.");
-                
+                Debug.Log("Ponto de fuga inv√°lido. Retornando √† patrulha.");
                 StateMachine(States.patrulha);
             }
         }
         else
         {
-            // Jogador longe, nada a fazer
             StateMachine(States.patrulha);
+        }
+    }
+
+    private IEnumerator Morte()
+    {
+        agent.isStopped = true;
+        anim.SetTrigger("morre");
+
+        // Espera a anima√ß√£o terminar (ajuste o tempo conforme sua anima√ß√£o)
+        yield return new WaitForSeconds(2f);
+
+        Destroy(gameObject); // OU desativa: gameObject.SetActive(false);
+    }
+
+    public void Morre()
+    {
+        if (!isDead)
+        {
+            isDead = true;
+
+            //  Notifica a miss√£o
+            QuestManager.Instance.EnemyKilled(enemyType);
+
+            StateMachine(States.morre);
         }
     }
 }
 
-  
+
