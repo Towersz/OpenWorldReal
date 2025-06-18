@@ -9,8 +9,10 @@ public abstract class QuestStep : MonoBehaviour
         if (!isCompleted)
         {
             isCompleted = true;
-
-            Destroy(this.gameObject);
+            Debug.Log("Step concluído: " + gameObject.name);
+            Destroy(gameObject);
         }
     }
+
+   
 }
