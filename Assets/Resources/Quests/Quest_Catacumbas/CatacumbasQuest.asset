@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: CatacumbasQuest
   questName: "V\xE1 para as catacumbas!"
-  levelRequirement: 0
-  questPrerequisites: []
   questStepsPrefabs: []
   itens: []

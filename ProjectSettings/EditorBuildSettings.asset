@@ -32,5 +32,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/PROJETO/Scenes/Vilas/Vila da Praia.unity
     guid: 6b32fd04164723e4db971b50590d94ee
+  - enabled: 1
+    path: Assets/PROJETO/Scenes/MainScene/Morte.unity
+    guid: 134fc52edc76961468288205a21f9c12
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
