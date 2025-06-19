@@ -21,7 +21,7 @@ public class ReturnPortal : MonoBehaviour
     IEnumerator MyLoadScene()
     {
         Camera.main.SendMessage("FadeOut");
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("terrain cena");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("Ilha Principal");
     }
 }
