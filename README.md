@@ -1,23 +1,55 @@
-# Title: Look Away: The Academic Odyssey
 
-## Description:
+# Fratellanza: O Despertar do Pirata
 
-Look Away: The Academic Odyssey is a 3D open-world adventure game developed in Unity, inspired by the captivating gameplay of "The Legend of Zelda: Breath of the Wild" and "Guardian of Andra"(2018 PUCSP TCC). Set in a vast and mesmerizing world, the game masterfully blends exploration, puzzle-solving, and thrilling combat with  elements.
 
-Players assume the role of a courageous scholar on a quest to rediscover the obscured knowledge of the ancient realm. They will navigate diverse landscapes, encounter intriguing characters, and delve into the mysteries of an elaborate story deeply intertwined with the history and mythology of the world.
+## DescriÃ§Ã£o
 
-Key Features:
+**Fratellanza: O Despertar do Pirata** Ã© um jogo 3D de mundo aberto desenvolvido na Unity, inspirado nas mecÃ¢nicas envolventes de *The Legend of Zelda: Breath of the Wild* e outros clÃ¡ssicos da aventura. Ambientado em um arquipÃ©lago misterioso, o jogo mistura exploraÃ§Ã£o, resoluÃ§Ã£o de puzzles, combate e interaÃ§Ã£o com personagens para criar uma jornada Ã©pica de descoberta e libertaÃ§Ã£o.
 
-1. Open-world Exploration: Venture through a rich and varied world teeming with verdant forests, perilous mountains, arid deserts, and concealed dungeons. Locate ancient artifacts, unearth hidden treasures, and learn about the forgotten civilizations of Andra.
+VocÃª assume o papel de **Pistache**, um jovem pirata que naufraga em uma ilha desconhecida. Com a ajuda de seu novo amigo **Pierrot**, ele parte em uma missÃ£o para libertar a ilha de uma ameaÃ§a silenciosa que a mantÃ©m presa ao passado. Conforme explora o mundo, Pistache descobrirÃ¡ segredos antigos, completarÃ¡ missÃµes e reconstruirÃ¡ a histÃ³ria esquecida da ilha.
 
-2. Educational Gameplay: Integrate real-world academic principles with captivating gameplay mechanics. Conquer physics-based puzzles, decipher enigmatic historical documents, and employ critical thinking skills to resolve riddles and reveal the secrets of Andra.
+## Principais Recursos
 
-3. Challenging Combat: Engage in dynamic combat, utilizing a mix of weaponry, magical abilities, and cunning to vanquish a wide array of adversaries, including formidable bosses guarding the secrets of the past.
+1. **ExploraÃ§Ã£o de Mundo Aberto**  
+   Navegue por vilas costeiras, florestas densas, montanhas e ruÃ­nas escondidas. Descubra caminhos secretos, shrines misteriosos e recompensas ocultas.
 
-4. Dynamic NPCs and Questlines: Interact with a diverse cast of characters, each with their own distinct stories, personalities, and aspirations. Undertake side quests to gain valuable insights, uncover new regions, and earn unique rewards.
+2. **Sistema de Quests com Progresso**  
+   Complete missÃµes com mÃºltiplas etapas, prÃ©-requisitos e recompensas Ãºnicas. Avance na narrativa e desbloqueie novas regiÃµes atravÃ©s de objetivos guiados por personagens e eventos.
 
-5. Rich Lore and Storytelling: Unravel the enthralling history of Andra through environmental storytelling, ancient texts, and character interactions. Assemble the narratives of long-lost civilizations and their connections to the world around you.
+3. **InteraÃ§Ã£o com o Mundo**  
+   Colete itens, fale com NPCs, abra portas e ative mecanismos utilizando um sistema de interaÃ§Ã£o integrado ao inventÃ¡rio e ao progresso do jogador.
 
-6. Customizable Character Progression: Evolve your character by unlocking new abilities, upgrading equipment, and specializing in a wide-ranging skill tree. Tailor your gameplay experience to match your desired playstyle and become the ultimate scholar-warrior.
+4. **Ciclo de Dia e Noite DinÃ¢mico**  
+   O tempo passa naturalmente no jogo, alterando o ambiente e a experiÃªncia do jogador.
 
-Embark on an epic journey in Look Away: The Academic Odyssey, where you'll not only immerse yourself in a gripping adventure but also acquire valuable real-world knowledge that will endure long after you've bid farewell to the land of Andra.
+5. **Ambientes Detalhados e Atmosfera Imersiva**  
+   Visite vilas como a da praia e da floresta, construÃ­das com atenÃ§Ã£o ao design visual e ambiental. Efeitos de partÃ­culas e shaders personalizados criam uma ambientaÃ§Ã£o Ãºnica.
+
+6. **Sistema de DiÃ¡logos**  
+   Interaja com personagens que revelam informaÃ§Ãµes sobre o mundo, oferecem missÃµes e enriquecem a narrativa do jogo.
+
+## InformaÃ§Ãµes de Desenvolvimento
+
+- **Engine:** Unity  
+- **Linguagem:** C#  
+- **Tipo de Projeto:** Projeto final acadÃªmico  
+- **ExecuÃ§Ã£o:** NecessÃ¡rio abrir na Unity e gerar build manual  
+- **RepositÃ³rio:** _[inserir link do GitHub aqui]_  
+- **LicenÃ§a:** MIT (CÃ³digo Aberto)
+
+## Equipe de Desenvolvimento
+
+- Gabriel Rodrigues Torres  
+- Heric Carvalho  
+- Henrique Miranda  
+- Henrique Cruz  
+- Guilherme Motoyama  
+- JoÃ£o Minami
+
+## ConsideraÃ§Ãµes Finais
+
+**Fratellanza** Ã© um protÃ³tipo acadÃªmico que demonstra os fundamentos de um jogo de aventura em mundo aberto. Mesmo em estÃ¡gio inicial, o projeto jÃ¡ apresenta sistemas centrais para gameplay e narrativa, servindo como base sÃ³lida para futuras expansÃµes.
+
+Embarque nessa jornada com Pistache e descubra que a ilha guarda mais do que ruÃ­nas â€” ela guarda histÃ³rias prontas para serem redescobertas.
+
+---
