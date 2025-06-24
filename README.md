@@ -11,7 +11,7 @@ Você assume o papel de **Pistache**, um jovem pirata que naufraga em uma ilha d
 ## Principais Recursos
 
 1. **Exploração de Mundo Aberto**  
-   Navegue por vilas costeiras, florestas densas, montanhas e ruÃ­nas escondidas. Descubra caminhos secretos, shrines misteriosos e recompensas ocultas.
+   Navegue por vilas costeiras, florestas densas, montanhas e ruínas escondidas. Descubra caminhos secretos, shrines misteriosos e recompensas ocultas.
 
 2. **Sistema de Quests com Progresso**  
    Complete missõees com múltiplas etapas, pré-requisitos e recompensas únicas. Avance na narrativa e desbloqueie novas regiões através de objetivos guiados por personagens e eventos.
