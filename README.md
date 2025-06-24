@@ -6,7 +6,7 @@
 
 **Fratellanza** é um jogo 3D de mundo aberto desenvolvido na Unity, inspirado nas mecânicas envolventes de *The Legend of Zelda: Breath of the Wild* e outros clássicos da aventura. Ambientado em um arquipélago misterioso, o jogo mistura exploração, resolução de puzzles, combate e interação com personagens para criar uma jornada épica de descoberta e libertação.
 
-Você assume o papel de **Pistache**, um jovem pirata que naufraga em uma ilha desconhecida. Com a ajuda de seu novo amigo **Pierrot**, ele parte em uma missÃ£o para libertar a ilha de uma ameaÃ§a silenciosa que a mantÃ©m presa ao passado. Conforme explora o mundo, Pistache descobrirá segredos antigos, completará missões e reconstruirá a história esquecida da ilha.
+Você assume o papel de **Pistache**, um jovem pirata que naufraga em uma ilha desconhecida. Com a ajuda de seu novo amigo **Pierrot**, ele parte em uma missÃ£o para libertar a ilha de uma ameaça silenciosa que a mantém presa ao passado. Conforme explora o mundo, Pistache descobrirá segredos antigos, completará missões e reconstruirá a história esquecida da ilha.
 
 ## Principais Recursos
 
